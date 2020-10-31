@@ -1,3 +1,40 @@
+@font-face {
+  font-family: shrikhand;
+  src: url("/public/fonts/Shrikhand/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url("/public/fonts/Roboto/Roboto-Regular.ttf");
+}
+.container h1 {
+  font-family: roboto-regular;
+}
+.container p {
+  font-family: roboto-regular;
+  margin: 0 0;
+  padding: 10px;
+}
 
+.header__logo {
+  width: 30%;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+.location {
+  background-color: #eaeaea;
+}
+.location__txt {
+  position: relative;
+}
+.location__txt .fas {
+  position: absolute;
+  left: 241px;
+  top: 9px;
+}
 
 /*# sourceMappingURL=style.css.map */

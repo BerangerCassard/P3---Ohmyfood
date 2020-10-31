@@ -1,0 +1,14 @@
+.location {
+    background-color: #eaeaea;
+
+    &__txt {
+        position: relative;
+
+        & .fas {
+            position: absolute;
+            left: 241px;
+            top: 9px;
+        }
+    }
+
+}
