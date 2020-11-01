@@ -1,13 +1,75 @@
+
 .location {
     background-color: #eaeaea;
+    color: #353535;
+    padding: 8px 0;
+}
 
-    &__txt {
-        position: relative;
+.hero {
+    padding: 45px 0;
+    background-color: $grey-color;
+}
 
-        & .fas {
-            position: absolute;
-            left: 241px;
-            top: 9px;
+.operation {
+    padding: 35px;
+    
+    &__title {
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+
+    &__step1 {
+        @include bloc-operation;
+
+        // &:hover {
+        //     background-color: $primary-color;
+        //     opacity: 0.1;
+        // }
+
+        &::before {
+            font-family: "Font Awesome 5 free";
+            // content: "\f3fa";
+        }
+
+        &--number {
+            @include number;
+        }
+    }
+
+    &__step2 {
+        @include bloc-operation;
+
+        &--number {
+            @include number;
+        }
+    }
+
+    &__step3 {
+        @include bloc-operation;
+
+        &--number {
+            @include number;
+        }
+    }
+
+}
+
+.restaurant {
+    padding: 35px;
+    background-color: $grey-color;
+
+    &__title {
+        text-align: left;
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }    
+
+    &__bloc {
+        @include bloc-restaurant;
+
+        &__new {
+            @include new;            
         }
     }
 

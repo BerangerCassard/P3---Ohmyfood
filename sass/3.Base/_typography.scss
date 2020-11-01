@@ -8,14 +8,37 @@
     src: url("/public/fonts/Roboto/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: roboto-light;
+    src: url("/public/fonts/Roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: roboto-bold;
+    src: url("/public/fonts/Roboto/Roboto-Bold.ttf");
+}
+
 .container {
 
     & h1 {
+        font-family: shrikhand;
+        margin: 0 0;
+    }
+
+    & H2 {
+        font-family: roboto-bold;
+    }
+
+    & h3 {
+        font-family: roboto-regular;
+    }
+
+    & H4 {
         font-family: roboto-regular;
     }
 
     & p {
-        font-family: roboto-regular;
+        font-family: roboto-light;
         margin: 0 0;
         padding: 10px;
     }

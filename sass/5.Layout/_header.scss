@@ -1,6 +1,7 @@
 .header {
+    box-shadow: 1px 6px 7px -1px rgba(0,0,0,0.29);
 
-    &__logo {
-        width: 30%;
+    & H1 {
+        text-align: center;
     }
 }
