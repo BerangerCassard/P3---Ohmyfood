@@ -3,6 +3,10 @@
     background-color: #eaeaea;
     color: #353535;
     padding: 8px 0;
+
+    & i {
+        margin-right: 12px;
+    }
 }
 
 .hero {
@@ -22,14 +26,14 @@
     &__step1 {
         @include bloc-operation;
 
-        // &:hover {
-        //     background-color: $primary-color;
-        //     opacity: 0.1;
-        // }
+        &:hover {
+            background-color: #ded0efc2;
+        }
 
         &::before {
             font-family: "Font Awesome 5 free";
-            // content: "\f3fa";
+            content: "\f3fa";
+            color: blue;
         }
 
         &--number {

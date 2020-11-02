@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: shrikhand;
   src: url("/public/fonts/Shrikhand/Shrikhand-Regular.ttf");
@@ -48,7 +49,8 @@
 }
 
 .header {
-  box-shadow: 1px 6px 7px -1px rgba(0, 0, 0, 0.29);
+  box-shadow: 1px 6px 7px -1px rgba(53, 53, 53, 0.29);
+  position: relative;
 }
 .header H1 {
   text-align: center;
@@ -64,6 +66,9 @@
   background-color: #eaeaea;
   color: #353535;
   padding: 8px 0;
+}
+.location i {
+  margin-right: 12px;
 }
 
 .hero {
@@ -88,8 +93,13 @@
   padding: 6px 0;
   box-shadow: -7px 11px 11px -7px rgba(53, 53, 53, 0.29);
 }
+.operation__step1:hover {
+  background-color: #ded0efc2;
+}
 .operation__step1::before {
   font-family: "Font Awesome 5 free";
+  content: "";
+  color: blue;
 }
 .operation__step1--number {
   border-radius: 50%;
@@ -101,6 +111,10 @@
   position: absolute;
   top: 20px;
   left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto-regular;
 }
 .operation__step2 {
   margin: 20px auto;
@@ -121,6 +135,10 @@
   position: absolute;
   top: 20px;
   left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto-regular;
 }
 .operation__step3 {
   margin: 20px auto;
@@ -141,6 +159,10 @@
   position: absolute;
   top: 20px;
   left: -12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: roboto-regular;
 }
 
 .restaurant {
