@@ -1,3 +1,26 @@
 .footer {
-    background-color: ;
+    background-color: #353535;
+    color: white;
+    padding: 27px 35px;
+    text-align: left;
+
+    & h4 {
+        font-family: shrikhand;
+        font-size: 20px;
+        padding: 0 0 10px 0;
+    }
+
+    & p {
+        padding: 3px 0;
+    }
+}
+
+.fa-utensils {
+    margin-right: 15px;
+    font-size: 12px;
+}
+
+.fa-hands-helping {
+    margin-right: 10px;
+    font-size: 12px; 
 }
