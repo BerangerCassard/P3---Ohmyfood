@@ -103,7 +103,7 @@
 }
 
 .operation {
-  padding: 35px;
+  padding: 35px 0;
 }
 .operation__title {
   text-align: left;
@@ -190,7 +190,7 @@
 }
 
 .restaurant {
-  padding: 35px;
+  padding: 35px 0;
   background-color: #f6f6f6;
 }
 .restaurant__title {
@@ -204,6 +204,7 @@
   margin: 20px auto;
   width: 90%;
   position: relative;
+  box-shadow: -7px 11px 11px -7px rgba(53, 53, 53, 0.29);
 }
 .restaurant__bloc__new {
   color: #008766;
