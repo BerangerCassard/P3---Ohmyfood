@@ -36,7 +36,7 @@
 }
 
 .btn-large {
-  margin: 20px auto;
+  margin: 30px auto;
   padding: 16px 20px;
   border-radius: 25px 25px;
   color: white;
@@ -293,22 +293,22 @@
   background-image: url("/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-position: bottom;
-  width: 100%;
+  width: 69%;
   height: 354px;
+  position: absolute;
 }
 
 .container-menu {
   background-color: #f6f6f6;
   border-radius: 50px 50px 0 0;
   position: relative;
-  top: -75px;
-  padding: 30px 0;
+  padding: 30px 0 50px 0;
+  margin-top: 260px;
 }
 .container-menu H1 {
   text-align: left;
   width: 90%;
   margin: auto;
-  margin-bottom: 30px;
 }
 .container-menu H1::after {
   content: "";
@@ -328,29 +328,67 @@
   padding: 5px 0;
   width: 90%;
   margin-left: 32px;
+  margin-top: 40px;
   font-family: roboto-light;
   font-weight: 500;
   font-size: 19px;
-  border-bottom: 3px solid #99e2d0;
+  border-bottom: 3px solid #99E2D0;
   width: 54px;
 }
 
-.restaurant__bloc {
+.dish__bloc {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 25px;
+  background-color: white;
+  margin: 20px auto;
+  width: 90%;
+  position: relative;
+  box-shadow: -7px 11px 11px -7px rgba(53, 53, 53, 0.29);
 }
-.restaurant__bloc__description::after {
+.dish__bloc a {
+  position: absolute;
+  width: 100%;
+  height: 92px;
+  left: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.dish__bloc__description {
+  width: 87%;
+  text-align: left;
+  padding-left: 7px;
+}
+.dish__bloc__description h3 {
+  padding-left: 10px;
+  margin: 8px 0 0 0;
+}
+.dish__bloc__description::after {
   display: none;
 }
-.restaurant__bloc__description__detail {
+.dish__bloc__description__detail {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
-.restaurant__bloc__description__detail strong {
+.dish__bloc__description__detail strong {
   font-family: roboto-bold;
   color: #353535;
+}
+.dish__bloc__validation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  background-color: #99E2D0;
+  border-radius: 0 25px 25px 0;
+}
+.dish__bloc__validation i {
+  color: white;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
