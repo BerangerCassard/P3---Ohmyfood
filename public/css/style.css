@@ -47,6 +47,7 @@
   cursor: pointer;
   background-image: linear-gradient(#FF79DA, #9356DC);
   font-family: roboto-bold;
+  min-width: 210px;
 }
 
 .header {
@@ -55,6 +56,7 @@
 }
 .header H1 {
   text-align: center;
+  padding: 0 50px;
 }
 
 .footer {
@@ -271,6 +273,84 @@
   border-radius: 25px 25px 0 0;
   background-size: cover;
   background-position: center;
+}
+
+.header {
+  position: relative;
+}
+.header H1::before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-size: 22px;
+  color: #353535;
+  position: absolute;
+  left: 23px;
+  top: 12px;
+  cursor: pointer;
+}
+
+.menu-image {
+  background-image: url("/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 354px;
+}
+
+.container-menu {
+  background-color: #f6f6f6;
+  border-radius: 50px 50px 0 0;
+  position: relative;
+  top: -75px;
+  padding: 30px 0;
+}
+.container-menu H1 {
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.container-menu H1::after {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 28px;
+  color: #7e7e7e;
+  right: 53px;
+  top: 39px;
+  position: absolute;
+  cursor: pointer;
+}
+.container-menu H1::after:hover {
+  color: #9356DC;
+}
+.container-menu H2 {
+  text-align: left;
+  padding: 5px 0;
+  width: 90%;
+  margin-left: 32px;
+  font-family: roboto-light;
+  font-weight: 500;
+  font-size: 19px;
+  border-bottom: 3px solid #99e2d0;
+  width: 54px;
+}
+
+.restaurant__bloc {
+  display: flex;
+  flex-direction: row;
+}
+.restaurant__bloc__description::after {
+  display: none;
+}
+.restaurant__bloc__description__detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.restaurant__bloc__description__detail strong {
+  font-family: roboto-bold;
+  color: #353535;
 }
 
 /*# sourceMappingURL=style.css.map */
