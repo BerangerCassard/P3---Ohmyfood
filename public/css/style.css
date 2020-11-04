@@ -314,13 +314,14 @@
   font-family: "Font Awesome 5 Free";
   font-size: 28px;
   color: #7e7e7e;
-  right: 53px;
+  right: 81px;
   top: 39px;
   position: absolute;
   cursor: pointer;
 }
 .container-menu H1::after:hover {
   color: #9356DC;
+  font-size: 40px;
 }
 .container-menu H2 {
   text-align: left;
@@ -356,7 +357,7 @@
   cursor: pointer;
 }
 .dish__bloc__description {
-  width: 87%;
+  width: 240%;
   text-align: left;
   padding-left: 7px;
 }
@@ -388,6 +389,33 @@
 .dish__bloc__validation i {
   color: white;
   font-size: 30px;
+}
+
+.dish__bloc {
+  overflow: hidden;
+}
+.dish__bloc:hover > .dish__bloc__validation {
+  transform: translateX(0);
+  overflow: hidden;
+}
+.dish__bloc:hover > .dish__bloc__validation i {
+  transform: rotate(0turn);
+}
+.dish__bloc:hover > .dish__bloc__description {
+  width: 90%;
+}
+.dish__bloc__description {
+  transition: width 400ms;
+}
+.dish__bloc__validation {
+  transition: transform 300ms ease-out;
+  transform: translateX(33px);
+  transform-origin: right;
+}
+.dish__bloc__validation i {
+  display: inline-block;
+  transition: all 500ms;
+  transform: rotate(-1turn);
 }
 
 /*# sourceMappingURL=style.css.map */
