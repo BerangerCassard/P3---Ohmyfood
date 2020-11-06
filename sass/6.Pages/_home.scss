@@ -93,6 +93,16 @@
 
     &__bloc {
         @include bloc-restaurant;
+        position: relative;
+
+        & a {
+            position: absolute;
+            width: 100%;
+            cursor: pointer;
+            left: 0;
+            top: 0px;
+            height: 267px;
+        }
 
         &__new {
             @include new;            
@@ -108,6 +118,12 @@
             align-items: flex-start;
             padding: 15px 15px;
 
+            &:hover {
+                &::after {
+                    color: $secondary-color;
+                }
+            }
+
             &::after {
                 content: "\f004";
                 font-family: "Font Awesome 5 Free";
@@ -117,10 +133,6 @@
                 right: 40px;
                 bottom: 38px;
                 cursor: pointer;
-
-                &:hover {
-                    color: $primary-color;
-                }
             }
 
             & h3 {

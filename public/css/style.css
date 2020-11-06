@@ -34,6 +34,9 @@
   margin: 0 0;
   padding: 10px;
 }
+.container a {
+  text-decoration: none;
+}
 
 .btn-large {
   margin: 30px auto;
@@ -72,6 +75,9 @@
 }
 .footer p {
   padding: 3px 0;
+}
+.footer p a {
+  color: white;
 }
 
 .fa-utensils {
@@ -207,6 +213,15 @@
   width: 90%;
   position: relative;
   box-shadow: -7px 11px 11px -7px rgba(53, 53, 53, 0.29);
+  position: relative;
+}
+.restaurant__bloc a {
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  left: 0;
+  top: 0px;
+  height: 267px;
 }
 .restaurant__bloc__new {
   color: #008766;
@@ -227,6 +242,9 @@
   align-items: flex-start;
   padding: 15px 15px;
 }
+.restaurant__bloc__description:hover::after {
+  color: #FF79DA;
+}
 .restaurant__bloc__description::after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -236,9 +254,6 @@
   right: 40px;
   bottom: 38px;
   cursor: pointer;
-}
-.restaurant__bloc__description::after:hover {
-  color: #9356DC;
 }
 .restaurant__bloc__description h3 {
   margin: 0;
@@ -278,6 +293,15 @@
 .header {
   position: relative;
 }
+.header > a {
+  cursor: pointer;
+  width: 9%;
+  height: 40px;
+  position: absolute;
+  left: 9px;
+  top: 0;
+  z-index: 1;
+}
 .header H1::before {
   font-family: "Font Awesome 5 Free";
   content: "";
@@ -289,7 +313,7 @@
   cursor: pointer;
 }
 
-.menu-image {
+#french {
   background-image: url("/public/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
   background-size: cover;
   background-position: bottom;
@@ -309,6 +333,9 @@
   width: 90%;
   margin: auto;
 }
+.container-menu H1:hover::after {
+  color: #FF79DA;
+}
 .container-menu H1::after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -318,10 +345,6 @@
   top: 39px;
   position: absolute;
   cursor: pointer;
-}
-.container-menu H1::after:hover {
-  color: #9356DC;
-  font-size: 40px;
 }
 .container-menu H2 {
   text-align: left;
@@ -405,7 +428,7 @@
   width: 90%;
 }
 .dish__bloc__description {
-  transition: width 400ms;
+  transition: width 400ms ease-in-out;
 }
 .dish__bloc__validation {
   transition: transform 300ms ease-out;
@@ -416,6 +439,30 @@
   display: inline-block;
   transition: all 500ms;
   transform: rotate(-1turn);
+}
+
+#enchanted {
+  background-image: url("/public/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 354px;
+}
+
+#taste {
+  background-image: url("/public/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 354px;
+}
+
+#senses {
+  background-image: url("/public/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 354px;
 }
 
 /*# sourceMappingURL=style.css.map */
