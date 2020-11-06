@@ -1,0 +1,68 @@
+
+// animattion d'apparition successive
+
+.dish__bloc {
+    animation : opacity-dish $animation-duration forwards;
+}
+
+#bloc { 
+    @for $i from 1 through 10 {
+        &#{$i} {
+            animation-delay: 300ms*$i;
+        }
+    }
+}
+
+@keyframes opacity-dish {
+    0% { 
+        opacity: 0;
+        translate:(0,30%);
+    }
+
+    50% { 
+        opacity: 0.8;
+        translate:(0,20%);
+    }
+
+    100% { 
+        opacity: 1;
+        translate:(0);
+    }
+}
+
+// Animation de validation
+.dish__bloc {
+    overflow: hidden;
+
+    &:hover {
+
+        & > .dish__bloc__validation {
+                transform: translateX(0);
+                overflow: hidden;
+
+                & i {
+                    transform: rotate(0turn);
+                }
+            }
+
+        & > .dish__bloc__description {
+            width: 90%;
+        }
+    }
+
+    &__description {
+        transition: width 400ms ease-in-out;
+    }
+
+    &__validation {
+        transition: transform 300ms ease-out;
+        transform: translateX(33px);
+        transform-origin: right;
+
+        & i {
+            display: inline-block;
+            transition: all 500ms;
+            transform: rotate(-1turn);
+        }
+    }
+}

@@ -4,12 +4,14 @@
 @import "./1.utils/mixins";
 @import "./3.Base/base";
 @import "./3.Base/typography";
+@import "./3.Base/animation";
 @import "./4.components/buttons";
 @import "./5.Layout/header";
 @import "./5.Layout/footer";
 @import "./5.Layout/nav";
 @import "./5.Layout/container";
 @import "./5.Layout/form";
+@import "./5.Layout/menu";
 @import "./6.Pages/home.scss";
 @import "./6.Pages/a_la_française.scss";
 @import "./6.Pages/note_enchantée.scss";

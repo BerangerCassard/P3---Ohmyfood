@@ -1,4 +1,4 @@
-.header {
+#header-home {
     box-shadow: 1px 6px 7px -1px rgba(53,53,53,0.29);
     position: relative;
 
@@ -6,4 +6,14 @@
         text-align: center;
         padding: 0 50px;
     }
+}
+
+.header {
+    box-shadow: 1px 6px 7px -1px rgba(53,53,53,0.29);
+    position: relative;
+
+    & H1 {
+        text-align: center;
+        padding: 0 50px;
+    }    
 }
