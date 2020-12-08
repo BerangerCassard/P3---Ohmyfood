@@ -230,6 +230,11 @@
   justify-content: space-between;
   width: 98%;
 }
+.dish__bloc__description__detail + p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 .dish__bloc__description__detail strong {
   font-family: roboto-bold;
   color: #353535;
@@ -580,7 +585,7 @@
   width: 90%;
 }
 .dish__bloc__description {
-  transition: width 400ms ease-in-out;
+  transition: width 400ms ease-out;
 }
 .dish__bloc__validation {
   transition: all 300ms ease-out;

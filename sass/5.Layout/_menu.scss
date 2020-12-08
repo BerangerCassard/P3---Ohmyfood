@@ -116,6 +116,12 @@
             justify-content: space-between;
             width: 98%;
 
+            & + p {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            }
+
             & strong {
                 font-family: roboto-bold;
                 color: #353535;
