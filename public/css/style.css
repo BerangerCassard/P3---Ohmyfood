@@ -228,7 +228,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
 }
 .dish__bloc__description__detail strong {
   font-family: roboto-bold;
@@ -570,6 +570,7 @@
 }
 .dish__bloc:hover > .dish__bloc__validation {
   transform: translateX(0);
+  width: 80px;
   overflow: hidden;
 }
 .dish__bloc:hover > .dish__bloc__validation i {
@@ -582,8 +583,9 @@
   transition: width 400ms ease-in-out;
 }
 .dish__bloc__validation {
-  transition: transform 300ms ease-out;
+  transition: all 300ms ease-out;
   transform: translateX(33px);
+  width: 0px;
   transform-origin: right;
 }
 .dish__bloc__validation i {
