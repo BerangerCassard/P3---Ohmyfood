@@ -130,7 +130,7 @@
   height: 40px;
   position: absolute;
   left: 9px;
-  top: 0;
+  top: 13px;
   z-index: 1;
 }
 .header H1::before {
@@ -140,7 +140,7 @@
   color: #353535;
   position: absolute;
   left: 23px;
-  top: 12px;
+  top: 24px;
   cursor: pointer;
 }
 
