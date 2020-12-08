@@ -12,6 +12,16 @@
 .hero {
     padding: 45px 0;
     background-color: $grey-color;
+
+    & h2 {
+        width: 70%;
+        margin: auto;
+    }
+
+    & p {
+        width: 90%;
+        margin: 5px auto;
+    }
 }
 
 .operation {
@@ -125,7 +135,7 @@
                     font-family: "Font Awesome 5 Free";
                     font-size: 33px;
                     position: absolute;
-                    right: 40px;
+                    right: 30px;
                     font-weight: 900;
                     bottom: 38px;
                     cursor: pointer;
@@ -138,7 +148,7 @@
                 font-size: 33px;
                 color: $grey-dark-color;
                 position: absolute;
-                right: 40px;
+                right: 30px;
                 bottom: 38px;
                 cursor: pointer;
             }

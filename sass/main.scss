@@ -4,7 +4,6 @@
 @import "./1.utils/mixins";
 @import "./3.Base/base";
 @import "./3.Base/typography";
-@import "./3.Base/animation";
 @import "./4.components/buttons";
 @import "./5.Layout/header";
 @import "./5.Layout/footer";
@@ -17,3 +16,5 @@
 @import "./6.Pages/note_enchantée.scss";
 @import "./6.Pages/palette_goût.scss";
 @import "./6.Pages/délice_sens.scss";
+@import "./7.Themes/responsive.scss";
+@import "./7.Themes/animation.scss";

@@ -1,0 +1,28 @@
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+#step1, #step2, #step3 {
+  font-size: 1rem;
+}
+
+.container-menu H1 {
+  margin: 0 0 0 25px ;
+  width: 70%;
+}
+
+.container-menu H1::after {
+  right: 36px;
+}
+
+.container p {
+  font-size: 0.9rem;
+}
+
+}

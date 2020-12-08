@@ -16,17 +16,19 @@
 @keyframes opacity-dish {
     0% { 
         opacity: 0;
-        translate:(0,30%);
+        transform: translate(0, 20px);
+
     }
 
     50% { 
         opacity: 0.8;
-        translate:(0,20%);
+        transform: translate(0);
+
     }
 
     100% { 
         opacity: 1;
-        translate:(0);
+        transform: translate(0);
     }
 }
 

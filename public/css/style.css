@@ -38,84 +38,24 @@
   text-decoration: none;
 }
 
-.dish__bloc {
-  animation: opacity-dish 4000ms forwards;
-}
-
-#bloc1 {
-  animation-delay: 300ms;
-}
-#bloc2 {
-  animation-delay: 600ms;
-}
-#bloc3 {
-  animation-delay: 900ms;
-}
-#bloc4 {
-  animation-delay: 1200ms;
-}
-#bloc5 {
-  animation-delay: 1500ms;
-}
-#bloc6 {
-  animation-delay: 1800ms;
-}
-#bloc7 {
-  animation-delay: 2100ms;
-}
-#bloc8 {
-  animation-delay: 2400ms;
-}
-#bloc9 {
-  animation-delay: 2700ms;
-}
-#bloc10 {
-  animation-delay: 3000ms;
-}
-
-@keyframes opacity-dish {
-  0% {
-    opacity: 0;
-    translate: 0, 30%;
-  }
-  50% {
-    opacity: 0.8;
-    translate: 0, 20%;
-  }
-  100% {
-    opacity: 1;
-    translate: 0;
-  }
-}
-.dish__bloc {
-  overflow: hidden;
-}
-.dish__bloc:hover > .dish__bloc__validation {
-  transform: translateX(0);
-  overflow: hidden;
-}
-.dish__bloc:hover > .dish__bloc__validation i {
-  transform: rotate(0turn);
-}
-.dish__bloc:hover > .dish__bloc__description {
-  width: 90%;
-}
-.dish__bloc__description {
-  transition: width 400ms ease-in-out;
-}
-.dish__bloc__validation {
-  transition: transform 300ms ease-out;
-  transform: translateX(33px);
-  transform-origin: right;
-}
-.dish__bloc__validation i {
-  display: inline-block;
-  transition: all 500ms;
-  transform: rotate(-1turn);
-}
-
 .btn-large {
-  margin: 30px auto;
+  margin: 15px auto;
+  padding: 16px 20px;
+  border-radius: 25px 25px;
+  color: white;
+  background-color: #FF79DA;
+  font-size: 15px;
+  border: none;
+  box-shadow: -7px 11px 25px -2px rgba(53, 53, 53, 0.29);
+  cursor: pointer;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  font-family: roboto-bold;
+  min-width: 210px;
+}
+
+.btn-large--menu {
+  margin: 15px auto;
+  margin-top: 30px;
   padding: 16px 20px;
   border-radius: 25px 25px;
   color: white;
@@ -135,7 +75,7 @@
 }
 #header-home H1 {
   text-align: center;
-  padding: 0 50px;
+  padding: 11px 50px;
 }
 
 .header {
@@ -320,6 +260,14 @@
   padding: 45px 0;
   background-color: #f6f6f6;
 }
+.hero h2 {
+  width: 70%;
+  margin: auto;
+}
+.hero p {
+  width: 90%;
+  margin: 5px auto;
+}
 
 .operation {
   padding: 35px 0;
@@ -459,7 +407,7 @@
   font-family: "Font Awesome 5 Free";
   font-size: 33px;
   position: absolute;
-  right: 40px;
+  right: 30px;
   font-weight: 900;
   bottom: 38px;
   cursor: pointer;
@@ -470,7 +418,7 @@
   font-size: 33px;
   color: #7e7e7e;
   position: absolute;
-  right: 40px;
+  right: 30px;
   bottom: 38px;
   cursor: pointer;
 }
@@ -539,6 +487,109 @@
   background-position: center;
   width: 100%;
   height: 354px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  #step1, #step2, #step3 {
+    font-size: 1rem;
+  }
+
+  .container-menu H1 {
+    margin: 0 0 0 25px;
+    width: 70%;
+  }
+
+  .container-menu H1::after {
+    right: 36px;
+  }
+
+  .container p {
+    font-size: 0.9rem;
+  }
+}
+.dish__bloc {
+  animation: opacity-dish 4000ms forwards;
+}
+
+#bloc1 {
+  animation-delay: 300ms;
+}
+#bloc2 {
+  animation-delay: 600ms;
+}
+#bloc3 {
+  animation-delay: 900ms;
+}
+#bloc4 {
+  animation-delay: 1200ms;
+}
+#bloc5 {
+  animation-delay: 1500ms;
+}
+#bloc6 {
+  animation-delay: 1800ms;
+}
+#bloc7 {
+  animation-delay: 2100ms;
+}
+#bloc8 {
+  animation-delay: 2400ms;
+}
+#bloc9 {
+  animation-delay: 2700ms;
+}
+#bloc10 {
+  animation-delay: 3000ms;
+}
+
+@keyframes opacity-dish {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.dish__bloc {
+  overflow: hidden;
+}
+.dish__bloc:hover > .dish__bloc__validation {
+  transform: translateX(0);
+  overflow: hidden;
+}
+.dish__bloc:hover > .dish__bloc__validation i {
+  transform: rotate(0turn);
+}
+.dish__bloc:hover > .dish__bloc__description {
+  width: 90%;
+}
+.dish__bloc__description {
+  transition: width 400ms ease-in-out;
+}
+.dish__bloc__validation {
+  transition: transform 300ms ease-out;
+  transform: translateX(33px);
+  transform-origin: right;
+}
+.dish__bloc__validation i {
+  display: inline-block;
+  transition: all 500ms;
+  transform: rotate(-1turn);
 }
 
 /*# sourceMappingURL=style.css.map */
